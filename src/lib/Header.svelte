@@ -39,7 +39,7 @@
 
   {#if isMenuOpen}
     <nav
-      class="absolute left-0 top-[4.5rem] z-10 flex w-full flex-col gap-5 bg-pure-white p-8"
+      class="fixed left-0 top-[4.5rem] z-20 flex w-full flex-col gap-5 bg-pure-white p-8"
       transition:fly={{ duration: 300, y: -72, opacity: 0 }}
     >
       <ul
@@ -69,5 +69,14 @@
         >Get an invite</button
       >
     </nav>
+    <!-- overlay -->
+    <div
+      class="fixed bottom-0 left-0 right-0 top-0 z-10 cursor-default bg-pure-black/50"
+      transition:fly={{ duration: 300, opacity: 0 }}
+      on:click|self={toggleMenu}
+      on:keydown={(e) => e.key === 'Escape' && toggleMenu()}
+      role="button"
+      tabindex="0"
+    ></div>
   {/if}
 </header>

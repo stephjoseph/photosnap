@@ -1,1 +1,11 @@
-<h1 class="text-3xl font-bold underline text-light-grey">Hello world!</h1>
+<script>
+  import HomeHero from '$lib/home/home-hero.svelte';
+</script>
+
+<main>
+  <HomeHero />
+</main>
+
+<style>
+  /* your styles go here */
+</style>

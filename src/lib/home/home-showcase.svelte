@@ -20,7 +20,7 @@
     windowWidth = window.innerWidth;
   }
 
-  $: heroImageUrl =
+  $: showcaseImageUrl =
     windowWidth < 768
       ? showcase.image.mobile
       : windowWidth >= 768 && windowWidth < 1280
@@ -28,17 +28,17 @@
         : showcase.image.desktop;
 </script>
 
-<div class="flex w-full flex-col">
+<section class="flex w-full flex-col">
   <div class="w-full">
-    <img class="h-full w-full" src={heroImageUrl} alt="hero" />
+    <img class="h-full w-full" src={showcaseImageUrl} alt="hero" />
   </div>
   <div class="flex w-full flex-col gap-6 bg-pure-white py-[4.5rem] pl-8 pr-6">
     <div class="flex w-full flex-col gap-4">
-      <h1
+      <h2
         class="text-[2rem] font-bold uppercase leading-10 tracking-[3.33px] text-pure-black"
       >
         {showcase.title}
-      </h1>
+      </h2>
       <p class="text-[0.938rem] font-normal tracking-normal text-pure-black/60">
         {showcase.description}
       </p>
@@ -51,4 +51,4 @@
       <img src={arrow} alt="arrow icon" />
     </a>
   </div>
-</div>
+</section>

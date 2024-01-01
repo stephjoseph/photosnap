@@ -28,7 +28,7 @@
         : heroImgDesktop;
 </script>
 
-<div class="flex w-full flex-col">
+<section class="flex w-full flex-col">
   <div class="w-full">
     <img class="h-full w-full" src={heroImageUrl} alt="hero" />
   </div>
@@ -52,4 +52,4 @@
       <img src={arrow} alt="arrow icon" />
     </a>
   </div>
-</div>
+</section>

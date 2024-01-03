@@ -2,6 +2,7 @@
   import HomeHero from '$lib/home/home-hero.svelte';
   import HomeShowcase from '../lib/home/home-showcase.svelte';
   import HomeFeatured from '../lib/home/home-featured.svelte';
+  import HomeFeatures from '../lib/home/home-features.svelte';
   import showcaseImg1Mobile from '../assets/home/mobile/beautiful-stories.jpg';
   import showcaseImg1Tablet from '../assets/home/tablet/beautiful-stories.jpg';
   import showcaseImg1Desktop from '../assets/home/desktop/beautiful-stories.jpg';
@@ -41,6 +42,7 @@
   <HomeShowcase showcase={showcase1} />
   <HomeShowcase showcase={showcase2} />
   <HomeFeatured />
+  <HomeFeatures />
 </main>
 
 <style>

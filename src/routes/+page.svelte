@@ -44,7 +44,3 @@
   <HomeFeatured />
   <HomeFeatures />
 </main>
-
-<style>
-  /* your styles go here */
-</style>

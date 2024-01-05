@@ -3,7 +3,7 @@
   import StoriesStories from '../../lib/stories/stories-stories.svelte';
 </script>
 
-<main>
+<main class="mt-[4.5rem]">
   <StoriesHero />
   <StoriesStories />
 </main>

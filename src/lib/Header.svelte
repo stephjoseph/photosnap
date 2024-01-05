@@ -11,7 +11,7 @@
   };
 </script>
 
-<header class="relative">
+<header class="fixed left-0 top-0 z-50 w-screen">
   <div
     class="relative z-50 flex w-full items-center justify-between bg-pure-white px-6 py-7"
   >

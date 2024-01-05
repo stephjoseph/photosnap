@@ -37,7 +37,7 @@
   };
 </script>
 
-<main>
+<main class="mt-[4.5rem]">
   <HomeHero />
   <HomeShowcase showcase={showcase1} />
   <HomeShowcase showcase={showcase2} />

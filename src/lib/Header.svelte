@@ -15,9 +15,9 @@
   <div
     class="relative z-50 flex w-full items-center justify-between bg-pure-white px-6 py-7"
   >
-    <div>
+    <a on:click={() => (isMenuOpen = false)} href="/">
       <img src={logo} alt="photosnap logo" />
-    </div>
+    </a>
     <button type="button" class="relative h-4 w-5" on:click={toggleMenu}>
       {#if isMenuOpen}
         <img
@@ -48,25 +48,28 @@
         <li>
           <a
             class="block w-full text-center text-[0.938rem] font-bold uppercase leading-5 tracking-[2.5px] text-pure-black"
+            on:click={toggleMenu}
             href="/stories">Stories</a
           >
         </li>
         <li>
           <a
             class="block w-full text-center text-[0.938rem] font-bold uppercase leading-5 tracking-[2.5px] text-pure-black"
+            on:click={toggleMenu}
             href="/features">Features</a
           >
         </li>
         <li>
           <a
             class="block w-full text-center text-[0.938rem] font-bold uppercase leading-5 tracking-[2.5px] text-pure-black"
+            on:click={toggleMenu}
             href="/pricing">Pricing</a
           >
         </li>
       </ul>
       <button
         class="w-full bg-pure-black py-[0.875rem] text-center text-[0.938rem] font-bold uppercase leading-5 tracking-[2.5px] text-pure-white"
-        >Get an invite</button
+        on:click={toggleMenu}>Get an invite</button
       >
     </nav>
     <!-- overlay -->

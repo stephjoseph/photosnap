@@ -37,6 +37,10 @@
   };
 </script>
 
+<svelte:head>
+  <title>Photosnap - Home</title>
+</svelte:head>
+
 <main class="mt-[4.5rem]">
   <HomeHero />
   <HomeShowcase showcase={showcase1} />

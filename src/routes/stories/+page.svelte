@@ -3,6 +3,9 @@
   import StoriesStories from '../../lib/stories/stories-stories.svelte';
 </script>
 
+<svelte:head>
+  <title>Photosnap - Stories</title>
+</svelte:head>
 <main class="mt-[4.5rem]">
   <StoriesHero />
   <StoriesStories />

@@ -26,7 +26,9 @@
   };
 </script>
 
-<section class="relative flex w-full flex-col items-center gap-10 px-7 py-16">
+<section
+  class="relative flex w-full flex-col items-center gap-10 px-7 pb-8 pt-16"
+>
   <h2 class="invisible absolute -left-[9999px]">Pricing Plans</h2>
   <div class="pricing__switch">
     <span

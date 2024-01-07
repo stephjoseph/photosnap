@@ -1,4 +1,5 @@
 <script>
+  import PricingFeatures from '../../lib/pricing/pricing-features.svelte';
   import PricingHero from '../../lib/pricing/pricing-hero.svelte';
   import PricingPlans from '../../lib/pricing/pricing-plans.svelte';
   import Cta from '../../lib/shared/cta.svelte';
@@ -7,5 +8,6 @@
 <main class="mt-[7.5rem]">
   <PricingHero />
   <PricingPlans />
+  <PricingFeatures />
   <Cta />
 </main>

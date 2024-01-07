@@ -1,6 +1,6 @@
 <script>
-  import logoWhite from '../assets/shared/desktop/logo-white.svg';
-  import arrow from '../assets/shared/desktop/arrow-white.svg';
+  import logoWhite from '../../assets/shared/desktop/logo-white.svg';
+  import arrow from '../../assets/shared/desktop/arrow-white.svg';
 
   // Individual hovered states for each social media icon
   let isFacebookHovered = false;

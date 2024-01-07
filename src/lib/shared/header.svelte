@@ -1,13 +1,15 @@
 <script>
   import { fly, fade } from 'svelte/transition';
-  import logo from '../assets/shared/desktop/logo.svg';
-  import menu from '../assets/shared/mobile/menu.svg';
-  import close from '../assets/shared/mobile/close.svg';
+  import logo from '../../assets/shared/desktop/logo.svg';
+  import menu from '../../assets/shared/mobile/menu.svg';
+  import close from '../../assets/shared/mobile/close.svg';
 
   let isMenuOpen = false;
 
   const toggleMenu = () => {
     isMenuOpen = !isMenuOpen;
+
+    document.body.classList.toggle('overflow-y-hidden', isMenuOpen);
   };
 </script>
 

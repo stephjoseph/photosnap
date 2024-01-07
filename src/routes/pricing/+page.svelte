@@ -5,6 +5,9 @@
   import Cta from '../../lib/shared/cta.svelte';
 </script>
 
+<svelte:head>
+  <title>Photosnap - Pricing</title>
+</svelte:head>
 <main class="mt-[7.5rem]">
   <PricingHero />
   <PricingPlans />

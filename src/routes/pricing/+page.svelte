@@ -8,7 +8,7 @@
 <svelte:head>
   <title>Photosnap - Pricing</title>
 </svelte:head>
-<main class="mt-[7.5rem]">
+<main class="mt-[7.5rem] md:mt-0">
   <PricingHero />
   <PricingPlans />
   <PricingFeatures />

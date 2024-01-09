@@ -7,7 +7,7 @@
 <svelte:head>
   <title>Photosnap - Features</title>
 </svelte:head>
-<main class="mt-[4.5rem]">
+<main class="mt-[4.5rem] md:mt-0">
   <FeaturesHero />
   <FeaturesFeatures />
   <Cta />

@@ -41,7 +41,7 @@
   <title>Photosnap - Home</title>
 </svelte:head>
 
-<main class="mt-[4.5rem]">
+<main class="mt-[4.5rem] md:mt-0">
   <HomeHero />
   <HomeShowcase showcase={showcase1} />
   <HomeShowcase showcase={showcase2} />

@@ -2,7 +2,7 @@
   import logo from '../../assets/shared/desktop/logo.svg';
 </script>
 
-<header class="flex w-full items-center justify-between px-10 py-4">
+<header class="hidden w-full items-center justify-between px-10 py-4 md:flex">
   <a href="/">
     <img src={logo} alt="photosnap logo" />
   </a>

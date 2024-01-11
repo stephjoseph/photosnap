@@ -25,7 +25,9 @@
   ];
 </script>
 
-<section class="flex w-full flex-col gap-14 px-8 py-20">
+<section
+  class="flex w-full flex-col gap-14 px-8 py-20 md:gap-20 md:px-[9.75rem] md:py-[7.5rem]"
+>
   <h2 class="invisible absolute -left-[9999px]">Features</h2>
   {#each features as item}
     <div class="flex w-full flex-col items-center gap-12">

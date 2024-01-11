@@ -2,7 +2,7 @@
   import { onMount, onDestroy } from 'svelte';
   import arrow from '../../assets/shared/desktop/arrow.svg';
 
-  //   export let imagePosition;
+  export let imagePosition;
   export let showcase;
 
   let windowWidth = 0;
@@ -28,14 +28,26 @@
         : showcase.image.desktop;
 </script>
 
-<section class="flex w-full flex-col">
-  <div class="w-full">
-    <img class="h-full w-full" src={showcaseImageUrl} alt="hero" />
+<section
+  class="flex w-full flex-col md:max-h-[600px] {imagePosition === 'left'
+    ? 'md:flex-row'
+    : imagePosition === 'right'
+      ? 'md:flex-row-reverse'
+      : ''}"
+>
+  <div class="w-full md:w-[35.55%]">
+    <img
+      class="h-full w-full object-cover object-center"
+      src={showcaseImageUrl}
+      alt="hero"
+    />
   </div>
-  <div class="flex w-full flex-col gap-6 bg-pure-white py-[4.5rem] pl-8 pr-6">
+  <div
+    class="flex w-full flex-col gap-6 bg-pure-white py-[4.5rem] pl-8 pr-6 md:w-[64.45%] md:justify-center md:gap-12 md:px-14 md:py-[8.5rem]"
+  >
     <div class="flex w-full flex-col gap-4">
       <h2
-        class="text-[2rem] font-bold uppercase leading-10 tracking-[3.33px] text-pure-black"
+        class="text-[2rem] font-bold uppercase leading-10 tracking-[3.33px] text-pure-black md:text-[2.5rem] md:leading-[3rem] md:tracking-[4.17px]"
       >
         {showcase.title}
       </h2>

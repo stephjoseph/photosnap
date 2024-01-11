@@ -43,8 +43,8 @@
 
 <main class="mt-[4.5rem] md:mt-0">
   <HomeHero />
-  <HomeShowcase showcase={showcase1} />
-  <HomeShowcase showcase={showcase2} />
+  <HomeShowcase showcase={showcase1} imagePosition="left" />
+  <HomeShowcase showcase={showcase2} imagePosition="right" />
   <HomeFeatured />
   <HomeFeatures />
 </main>

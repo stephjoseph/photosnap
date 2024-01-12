@@ -199,43 +199,44 @@
 
 <section class="w-full">
   <h2 class="invisible absolute -left-[9999px]">Featured Stories</h2>
-  <div class="grid w-full grid-cols-1"></div>
-  {#each featured as item}
-    <div
-      class="relative h-[100vw] w-full bg-cover bg-center bg-no-repeat"
-      style="background-image: url({windowWidth < 768
-        ? item.image.mobile
-        : item.image.desktop})"
-    >
+  <div class="grid w-full grid-cols-1 md:grid-cols-2">
+    {#each featured as item}
       <div
-        class="absolute left-0 top-0 flex h-full w-full flex-col justify-end bg-gradient-to-b from-pure-black/5 to-pure-black/60 px-8 pb-10"
+        class="relative h-[100vw] w-full bg-cover bg-center bg-no-repeat md:h-[65.10vw]"
+        style="background-image: url({windowWidth < 768
+          ? item.image.mobile
+          : item.image.desktop})"
       >
-        <div class="flex flex-col gap-1">
-          <span
-            class="text-[0.813rem] font-normal leading-[1.063rem] tracking-normal text-pure-white"
-            >{item.date}</span
-          >
-          <h3
-            class="text-[1.125rem] font-bold leading-[1.563rem] tracking-normal text-pure-white"
-          >
-            {item.title}
-          </h3>
-          <span
-            class="text-[0.813rem] font-normal leading-[1.063rem] tracking-normal text-pure-white"
-            >by {item.author}</span
-          >
-        </div>
-        <div class="mb-5 mt-4 h-px w-full bg-pure-white/25"></div>
-        <div class="flex w-full items-center justify-between">
-          <a
-            class="text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-white"
-            href="/">Read story</a
-          >
-          <a href="/"> <img src={arrow} alt="arrow icon" /></a>
+        <div
+          class="absolute left-0 top-0 flex h-full w-full flex-col justify-end bg-gradient-to-b from-pure-black/5 to-pure-black/60 px-8 pb-10 md:px-[2.75rem]"
+        >
+          <div class="flex flex-col gap-1">
+            <span
+              class="text-[0.813rem] font-normal leading-[1.063rem] tracking-normal text-pure-white"
+              >{item.date}</span
+            >
+            <h3
+              class="text-[1.125rem] font-bold leading-[1.563rem] tracking-normal text-pure-white"
+            >
+              {item.title}
+            </h3>
+            <span
+              class="text-[0.813rem] font-normal leading-[1.063rem] tracking-normal text-pure-white"
+              >by {item.author}</span
+            >
+          </div>
+          <div class="mb-5 mt-4 h-px w-full bg-pure-white/25"></div>
+          <div class="flex w-full items-center justify-between">
+            <a
+              class="text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-white"
+              href="/">Read story</a
+            >
+            <a href="/"> <img src={arrow} alt="arrow icon" /></a>
+          </div>
         </div>
       </div>
-    </div>
-  {/each}
+    {/each}
+  </div>
 </section>
 
 <!-- markup (zero or more items) goes here -->

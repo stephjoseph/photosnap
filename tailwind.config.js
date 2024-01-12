@@ -3,13 +3,15 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
-    colors: {
-      'pure-black': '#000000',
-      'light-grey': '#DFDFDF',
-      'pure-white': '#FFFFFF',
-    },
-    fontFamily: {
-      sans: ['"DM Sans"', ...defaultTheme.fontFamily.sans],
+    extend: {
+      colors: {
+        'pure-black': '#000000',
+        'light-grey': '#DFDFDF',
+        'pure-white': '#FFFFFF',
+      },
+      fontFamily: {
+        sans: ['"DM Sans"', ...defaultTheme.fontFamily.sans],
+      },
     },
   },
   plugins: [],

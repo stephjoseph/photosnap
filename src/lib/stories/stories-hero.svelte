@@ -28,19 +28,25 @@
         : heroImgDesktop;
 </script>
 
-<section class="flex w-full flex-col">
-  <div class="w-full">
-    <img class="h-full w-full" src={heroImageUrl} alt="hero" />
+<section class="relative flex w-full flex-col">
+  <div class="w-full md:max-h-[650px]">
+    <img
+      class="h-full w-full object-cover object-center"
+      src={heroImageUrl}
+      alt="hero"
+    />
   </div>
-  <div class="flex w-full flex-col gap-6 bg-pure-black px-7 py-12">
+  <div
+    class="md:bg-transparent flex w-full flex-col gap-6 bg-pure-black px-7 py-12 md:absolute md:left-0 md:top-0 md:h-full md:justify-center md:py-[7.625rem] md:pl-10 md:pr-[21.313rem]"
+  >
     <div class="flex w-full flex-col gap-6">
       <div class="flex w-full flex-col gap-4">
         <span
-          class="text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-white"
+          class="text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-white md:mb-2"
           >Last month’s featured story</span
         >
         <h1
-          class="text-[2rem] font-bold uppercase leading-10 tracking-[3.33px] text-pure-white"
+          class="text-[2rem] font-bold uppercase leading-10 tracking-[3.33px] text-pure-white md:w-4/5 md:text-[2.5rem] md:leading-[3rem] md:tracking-[4.17px]"
         >
           Hazy Full Moon Of Appalachia
         </h1>
@@ -54,7 +60,9 @@
           >
         </div>
       </div>
-      <p class="text-[0.938rem] font-normal tracking-normal text-pure-white/60">
+      <p
+        class="text-[0.938rem] font-normal leading-[1.563rem] tracking-normal text-pure-white/60"
+      >
         The dissected plateau area, while not actually made up of geological
         mountains, is popularly called "mountains," especially in eastern
         Kentucky and West Virginia, and while the ridges are not high, the

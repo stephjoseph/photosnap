@@ -29,11 +29,11 @@
 </script>
 
 <section
-  class="relative flex w-full flex-col gap-6 bg-cover bg-center bg-no-repeat px-8 py-16 before:absolute before:left-8 before:top-0 before:block before:h-[0.375rem] before:w-32 before:bg-gradient-to-tr before:from-[#FFC593] before:from-0% before:via-[#BC7198] before:via-[43.29%] before:to-[#5A77FF] before:to-[83.33%]"
+  class="relative flex w-full flex-col gap-6 bg-cover bg-center bg-no-repeat px-8 py-16 before:absolute before:left-8 before:top-0 before:block before:h-[0.375rem] before:w-32 before:bg-gradient-to-tr before:from-[#FFC593] before:from-0% before:via-[#BC7198] before:via-[43.29%] before:to-[#5A77FF] before:to-[83.33%] md:flex-row md:justify-between md:gap-0 md:px-10 md:py-[4.25rem] md:before:left-0 md:before:h-full md:before:w-[0.375rem]"
   style="background-image: url({bgImageUrl})"
 >
   <h2
-    class="text-[2rem] font-bold uppercase leading-10 tracking-[3.33px] text-pure-white"
+    class="text-[2rem] font-bold uppercase leading-10 tracking-[3.33px] text-pure-white md:w-[58.14%] md:text-[2.5rem] md:leading-[3rem] md:tracking-[4.17px]"
   >
     We’re in beta. Get your invite today!
   </h2>

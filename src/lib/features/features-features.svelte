@@ -46,25 +46,35 @@
   ];
 </script>
 
-<section class="flex w-full flex-col gap-14 px-8 pb-24 pt-16">
+<section
+  class="flex w-full flex-col gap-14 px-8 pb-24 pt-16 md:px-10 md:py-[7rem]"
+>
   <h2 class="invisible absolute -left-[9999px]">Features</h2>
-  {#each features as item}
-    <div class="flex w-full flex-col items-center gap-12">
-      <div class="w-[4.5rem]">
-        <img class="w-full object-top" src={item.icon} alt="" />
+  <div
+    class="grid w-full grid-cols-1 gap-14 md:grid-cols-2 md:gap-x-3 md:gap-y-[4.5rem]"
+  >
+    {#each features as item}
+      <div class="flex w-full flex-col items-center gap-12">
+        <div class="h-[4.5rem] w-[4.5rem]">
+          <img
+            class="w-full object-top md:object-center"
+            src={item.icon}
+            alt=""
+          />
+        </div>
+        <div class="flex w-full flex-col gap-4">
+          <h3
+            class="text-center text-[1.125rem] font-bold leading-[1.563rem] tracking-normal text-pure-black"
+          >
+            {item.title}
+          </h3>
+          <p
+            class="text-center text-[0.938rem] font-normal leading-[1.563rem] tracking-normal text-pure-black/60"
+          >
+            {item.description}
+          </p>
+        </div>
       </div>
-      <div class="flex w-full flex-col gap-4">
-        <h3
-          class="text-center text-[1.125rem] font-bold leading-[1.563rem] tracking-normal text-pure-black"
-        >
-          {item.title}
-        </h3>
-        <p
-          class="text-center text-[0.938rem] font-normal leading-[1.563rem] tracking-normal text-pure-black/60"
-        >
-          {item.description}
-        </p>
-      </div>
-    </div>
-  {/each}
+    {/each}
+  </div>
 </section>

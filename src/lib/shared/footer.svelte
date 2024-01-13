@@ -8,6 +8,7 @@
   let isTwitterHovered = false;
   let isPinterestHovered = false;
   let isInstagramHovered = false;
+  let currentYear = new Date().getFullYear();
 
   const handleMouseOver = (icon) => {
     // Set the hovered state for the corresponding icon
@@ -396,7 +397,7 @@
     <p
       class="text-[0.938rem] font-normal leading-5 tracking-normal text-pure-white/50"
     >
-      Copyright 2019. All Rights Reserved
+      Copyright {currentYear}. All Rights Reserved
     </p>
   </div>
 </footer>

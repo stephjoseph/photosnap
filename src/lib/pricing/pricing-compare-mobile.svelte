@@ -53,7 +53,7 @@
   ];
 </script>
 
-<section class="flex w-full flex-col gap-6 px-7 pb-16 pt-8">
+<section class="flex w-full flex-col gap-6 px-7 pb-16 pt-8 md:hidden">
   <h2
     class="text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-black"
   >
@@ -105,7 +105,7 @@
               <td
                 class="flex-1 text-left"
                 aria-label={`Pro - ${feature.title} - ${
-                  feature.basic ? 'Enabled' : 'Disabled'
+                  feature.pro ? 'Enabled' : 'Disabled'
                 }`}
                 >{#if feature.pro}<div class="h-3 w-4">
                     <img
@@ -118,7 +118,7 @@
               <td
                 class="flex-1 text-left"
                 aria-label={`Business - ${feature.title} - ${
-                  feature.basic ? 'Enabled' : 'Disabled'
+                  feature.business ? 'Enabled' : 'Disabled'
                 }`}
                 >{#if feature.business}<div class="h-3 w-4">
                     <img

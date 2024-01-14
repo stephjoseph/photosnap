@@ -58,34 +58,34 @@
 </script>
 
 <footer
-  class="hidden w-full flex-col items-center gap-[7.5rem] bg-pure-black px-10 py-16 md:flex"
+  class="relative hidden w-full flex-col items-center gap-[7.5rem] bg-pure-black px-10 py-16 md:flex"
 >
   <div class="flex w-full items-start justify-between">
-    <div class="flex flex-col gap-8">
+    <div class="flex flex-col gap-8 xl:flex-1 xl:flex-row xl:gap-[6.813rem]">
       <a href="/"><img src={logoWhite} alt="photosnap logo" /></a>
       <nav class="w-full">
-        <ul class="flex w-full gap-7">
+        <ul class="flex w-full gap-7 xl:flex-col xl:gap-5">
           <li class="w-full">
             <a
-              class="block w-full text-center text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-white"
+              class="block w-full text-center text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-white xl:text-left"
               href="/">Home</a
             >
           </li>
           <li class="w-full">
             <a
-              class="block w-full text-center text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-white"
+              class="block w-full text-center text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-white xl:text-left"
               href="/stories">Stories</a
             >
           </li>
           <li class="w-full">
             <a
-              class="block w-full text-center text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-white"
+              class="block w-full text-center text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-white xl:text-left"
               href="/features">Features</a
             >
           </li>
           <li class="w-full">
             <a
-              class="block w-full text-center text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-white"
+              class="block w-full text-center text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-white xl:text-left"
               href="/pricing">Pricing</a
             >
           </li>
@@ -100,7 +100,9 @@
       <img src={arrow} alt="arrow icon" />
     </a>
   </div>
-  <div class="flex w-full justify-between">
+  <div
+    class="flex w-full justify-between xl:absolute xl:bottom-16 xl:left-0 xl:px-10"
+  >
     <ul class="flex items-center gap-4">
       <li>
         <a href="/">

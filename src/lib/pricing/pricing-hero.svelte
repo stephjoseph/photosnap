@@ -27,16 +27,16 @@
         : heroImgDesktop;
 </script>
 
-<section class="flex w-full flex-col">
-  <div class="w-full">
+<section class="flex w-full flex-col md:max-h-[490px] md:flex-row-reverse">
+  <div class="w-full md:w-[35.55%]">
     <img class="h-full w-full" src={heroImageUrl} alt="hero" />
   </div>
   <div
-    class="relative flex w-full flex-col gap-6 bg-pure-black px-7 py-[4.5rem] before:absolute before:left-8 before:top-0 before:block before:h-[0.375rem] before:w-32 before:bg-gradient-to-tr before:from-[#FFC593] before:from-0% before:via-[#BC7198] before:via-[43.29%] before:to-[#5A77FF] before:to-[83.33%]"
+    class="relative flex w-full flex-col gap-6 bg-pure-black px-7 py-[4.5rem] before:absolute before:left-8 before:top-0 before:block before:h-[0.375rem] before:w-32 before:bg-gradient-to-tr before:from-[#FFC593] before:from-0% before:via-[#BC7198] before:via-[43.29%] before:to-[#5A77FF] before:to-[83.33%] md:w-[64.45%] md:justify-center md:gap-12 md:px-14 md:py-[10.813rem] md:before:left-0 md:before:top-[10.813rem] md:before:h-[9rem] md:before:w-[0.375rem]"
   >
     <div class="flex w-full flex-col gap-4">
       <h1
-        class="text-[2rem] font-bold uppercase leading-10 tracking-[3.33px] text-pure-white"
+        class="text-[2rem] font-bold uppercase leading-10 tracking-[3.33px] text-pure-white md:text-[2.5rem] md:leading-[3rem] md:tracking-[4.17px]"
       >
         Pricing
       </h1>

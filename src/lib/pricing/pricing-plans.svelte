@@ -27,7 +27,7 @@
 </script>
 
 <section
-  class="relative flex w-full flex-col items-center gap-10 px-7 pb-8 pt-16"
+  class="relative flex w-full flex-col items-center gap-10 px-7 pb-8 pt-16 md:px-10 md:pb-14 md:pt-[7rem]"
 >
   <h2 class="invisible absolute -left-[9999px]">Pricing Plans</h2>
   <div class="pricing__switch">
@@ -49,53 +49,57 @@
   <div class="flex w-full flex-col gap-6">
     {#each plans as plan, i (plan.title)}
       <div
-        class="relative flex w-full flex-col items-center gap-10 px-5 pb-10 pt-14 {i ===
+        class="relative flex w-full flex-col items-center gap-10 px-5 pb-10 pt-14 md:items-start md:gap-8 md:p-10 {i ===
         1
           ? 'bg-pure-black'
           : 'bg-[#F5F5F5]'}"
       >
         {#if i === 1}
           <div
-            class="absolute left-0 top-0 block h-[0.375rem] w-full bg-gradient-to-tr from-[#FFC593] from-0% via-[#BC7198] via-[43.29%] to-[#5A77FF] to-[83.33%]"
+            class="absolute left-0 top-0 block h-[0.375rem] w-full bg-gradient-to-tr from-[#FFC593] from-0% via-[#BC7198] via-[43.29%] to-[#5A77FF] to-[83.33%] md:h-full md:w-[0.375rem]"
           ></div>
         {/if}
-        <div class="flex flex-col items-center gap-[1.125rem]">
-          <h3
-            class="text-center text-[1.5rem] font-bold leading-[1.563rem] tracking-normal {i ===
-            1
-              ? 'text-pure-white'
-              : 'text-pure-black'}"
+        <div class="flex w-full flex-col gap-10 md:flex-row md:justify-between">
+          <div
+            class="flex flex-col items-center gap-[1.125rem] md:w-[44.41%] md:items-start"
           >
-            {plan.title}
-          </h3>
-          <p
-            class="text-center text-[0.938rem] font-normal leading-[1.563rem] tracking-normal {i ===
-            1
-              ? 'text-pure-white/60'
-              : 'text-pure-black/60'}"
-          >
-            {plan.description}
-          </p>
-        </div>
-        <div class="flex flex-col items-center">
-          <span
-            class="text-[2.5rem] font-bold leading-[3rem] tracking-[4.17px] {i ===
-            1
-              ? 'text-pure-white'
-              : 'text-pure-black'}"
-            >${isYearly
-              ? (plan.price * 10).toFixed(2)
-              : plan.price.toFixed(2)}</span
-          >
-          <span
-            class="text-center text-[0.938rem] font-normal leading-[1.563rem] tracking-normal {i ===
-            1
-              ? 'text-pure-white/60'
-              : 'text-pure-black/60'}">per {isYearly ? 'year' : 'month'}</span
-          >
+            <h3
+              class="text-center text-[1.5rem] font-bold leading-[1.563rem] tracking-normal md:text-left {i ===
+              1
+                ? 'text-pure-white'
+                : 'text-pure-black'}"
+            >
+              {plan.title}
+            </h3>
+            <p
+              class="text-center text-[0.938rem] font-normal leading-[1.563rem] tracking-normal md:text-left {i ===
+              1
+                ? 'text-pure-white/60'
+                : 'text-pure-black/60'}"
+            >
+              {plan.description}
+            </p>
+          </div>
+          <div class="flex flex-col items-center">
+            <span
+              class="text-[2.5rem] font-bold leading-[3rem] tracking-[4.17px] {i ===
+              1
+                ? 'text-pure-white'
+                : 'text-pure-black'}"
+              >${isYearly
+                ? (plan.price * 10).toFixed(2)
+                : plan.price.toFixed(2)}</span
+            >
+            <span
+              class="text-center text-[0.938rem] font-normal leading-[1.563rem] tracking-normal {i ===
+              1
+                ? 'text-pure-white/60'
+                : 'text-pure-black/60'}">per {isYearly ? 'year' : 'month'}</span
+            >
+          </div>
         </div>
         <a
-          class="w-[87.81%] py-3 text-center text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] hover:bg-light-grey hover:text-pure-black {i ===
+          class="w-[87.81%] py-3 text-center text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] hover:bg-light-grey hover:text-pure-black md:max-w-[270px] {i ===
           1
             ? 'bg-pure-white text-pure-black'
             : 'bg-pure-black text-pure-white'}"

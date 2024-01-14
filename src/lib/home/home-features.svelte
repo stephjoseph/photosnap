@@ -26,12 +26,12 @@
 </script>
 
 <section
-  class="flex w-full flex-col gap-14 px-8 py-20 md:gap-20 md:px-[9.75rem] md:py-[7.5rem]"
+  class="flex w-full flex-col gap-14 px-8 py-20 md:gap-20 md:px-[9.75rem] md:py-[7.5rem] xl:flex-row xl:gap-[1.875rem] xl:px-[10.313rem]"
 >
   <h2 class="invisible absolute -left-[9999px]">Features</h2>
   {#each features as item}
     <div class="flex w-full flex-col items-center gap-12">
-      <div class="w-[4.5rem]">
+      <div class="h-[4.5rem] w-[4.5rem]">
         <img class="w-full object-top" src={item.icon} alt="" />
       </div>
       <div class="flex w-full flex-col gap-4">

@@ -35,7 +35,7 @@
       ? 'md:flex-row-reverse'
       : ''}"
 >
-  <div class="w-full md:w-[35.55%]">
+  <div class="w-full md:w-[35.55%] xl:w-[57.64%]">
     <img
       class="h-full w-full object-cover object-center"
       src={showcaseImageUrl}
@@ -43,9 +43,9 @@
     />
   </div>
   <div
-    class="flex w-full flex-col gap-6 bg-pure-white py-[4.5rem] pl-8 pr-6 md:w-[64.45%] md:justify-center md:gap-12 md:px-14 md:py-[8.5rem]"
+    class="flex w-full flex-col gap-6 bg-pure-white py-[4.5rem] pl-8 pr-6 md:w-[64.45%] md:justify-center md:gap-12 md:px-14 md:py-[8.5rem] xl:w-[42.36%] xl:px-28"
   >
-    <div class="flex w-full flex-col gap-4">
+    <div class="flex w-full flex-col gap-4 xl:gap-5">
       <h2
         class="text-[2rem] font-bold uppercase leading-10 tracking-[3.33px] text-pure-black md:text-[2.5rem] md:leading-[3rem] md:tracking-[4.17px]"
       >

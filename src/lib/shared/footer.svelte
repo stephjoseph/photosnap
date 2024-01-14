@@ -61,10 +61,14 @@
   class="relative hidden w-full flex-col items-center gap-[7.5rem] bg-pure-black px-10 py-16 md:flex"
 >
   <div class="flex w-full items-start justify-between">
-    <div class="flex flex-col gap-8 xl:flex-1 xl:flex-row xl:gap-[6.813rem]">
-      <a href="/"><img src={logoWhite} alt="photosnap logo" /></a>
-      <nav class="w-full">
-        <ul class="flex w-full gap-7 xl:flex-col xl:gap-5">
+    <div
+      class="flex flex-col gap-8 xl:max-w-[534px] xl:flex-row xl:gap-[6.813rem]"
+    >
+      <a class="h-4 min-w-[10.625rem]" href="/"
+        ><img class="h-full w-full" src={logoWhite} alt="photosnap logo" /></a
+      >
+      <nav class="z-10 w-full">
+        <ul class=" flex w-full min-w-[255px] gap-7 xl:flex-col xl:gap-5">
           <li class="w-full">
             <a
               class="block w-full text-center text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-white xl:text-left"

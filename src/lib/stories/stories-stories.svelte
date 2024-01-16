@@ -199,16 +199,16 @@
 
 <section class="w-full">
   <h2 class="invisible absolute -left-[9999px]">Featured Stories</h2>
-  <div class="grid w-full grid-cols-1 md:grid-cols-2">
+  <div class="grid w-full grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
     {#each featured as item}
       <div
-        class="relative h-[100vw] w-full bg-cover bg-center bg-no-repeat md:h-[65.10vw]"
+        class="relative h-[100vw] w-full bg-cover bg-center bg-no-repeat md:h-[65.10vw] xl:h-[34.65vw]"
         style="background-image: url({windowWidth < 768
           ? item.image.mobile
           : item.image.desktop})"
       >
         <div
-          class="absolute left-0 top-0 flex h-full w-full flex-col justify-end bg-gradient-to-b from-pure-black/5 to-pure-black/60 px-8 pb-10 md:px-[2.75rem]"
+          class="absolute left-0 top-0 flex h-full w-full flex-col justify-end bg-gradient-to-b from-pure-black/5 to-pure-black/60 px-8 pb-10 md:px-[2.75rem] xl:px-10"
         >
           <div class="flex flex-col gap-1">
             <span

@@ -58,7 +58,7 @@
 </script>
 
 <footer
-  class="relative hidden w-full flex-col items-center gap-[7.5rem] bg-pure-black px-10 py-16 md:flex"
+  class="relative hidden w-full flex-col items-center gap-[7.5rem] bg-pure-black px-10 py-16 md:flex xl:px-[10.688rem]"
 >
   <div class="flex w-full items-start justify-between">
     <div
@@ -105,7 +105,7 @@
     </a>
   </div>
   <div
-    class="flex w-full justify-between xl:absolute xl:bottom-16 xl:left-0 xl:px-10"
+    class="flex w-full justify-between xl:absolute xl:bottom-16 xl:left-0 xl:px-[10.688rem]"
   >
     <ul class="flex items-center gap-4">
       <li>

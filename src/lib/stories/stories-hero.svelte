@@ -37,9 +37,9 @@
     />
   </div>
   <div
-    class="md:bg-transparent flex w-full flex-col gap-6 bg-pure-black px-7 py-12 md:absolute md:left-0 md:top-0 md:h-full md:justify-center md:py-[7.625rem] md:pl-10 md:pr-[21.313rem]"
+    class="flex w-full flex-col gap-6 bg-pure-black px-7 py-12 md:absolute md:left-0 md:top-0 md:h-full md:justify-center md:bg-transparent md:py-[7.625rem] md:pl-10 md:pr-[21.313rem] xl:pl-[7rem] xl:pr-[58.75rem]"
   >
-    <div class="flex w-full flex-col gap-6">
+    <div class="z-10 flex w-full flex-col gap-6">
       <div class="flex w-full flex-col gap-4">
         <span
           class="text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-white md:mb-2"
@@ -70,11 +70,14 @@
       </p>
     </div>
     <a
-      class="flex w-fit items-center gap-[1.125rem] text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-white"
+      class="peer z-10 flex w-fit items-center gap-[1.125rem] text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-white"
       href="/"
     >
       <span>Read the story</span>
       <img src={arrow} alt="arrow icon" />
     </a>
+    <div
+      class="invisible left-0 top-0 hidden h-full w-[45rem] bg-[radial-gradient(94.05%_94.05%_at_0%_100%,_#FFC593_0%,_rgba(188,_113,_152,_0.50)_52.36%,_rgba(90,_119,_255,_0.00)_100%)] opacity-0 transition-opacity duration-300 xl:absolute xl:block xl:peer-hover:visible xl:peer-hover:opacity-[0.4899]"
+    ></div>
   </div>
 </section>

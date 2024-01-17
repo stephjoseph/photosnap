@@ -47,11 +47,11 @@
 </script>
 
 <section
-  class="flex w-full flex-col gap-14 px-8 pb-24 pt-16 md:px-10 md:py-[7rem]"
+  class="flex w-full flex-col gap-14 px-8 pb-24 pt-16 md:px-10 md:py-[7rem] xl:px-[10.313rem] xl:py-40"
 >
   <h2 class="invisible absolute -left-[9999px]">Features</h2>
   <div
-    class="grid w-full grid-cols-1 gap-14 md:grid-cols-2 md:gap-x-3 md:gap-y-[4.5rem]"
+    class="grid w-full grid-cols-1 gap-14 md:grid-cols-2 md:gap-x-3 md:gap-y-[4.5rem] xl:grid-cols-3 xl:gap-x-[1.875rem] xl:gap-y-[6.5rem]"
   >
     {#each features as item}
       <div class="flex w-full flex-col items-center gap-12">

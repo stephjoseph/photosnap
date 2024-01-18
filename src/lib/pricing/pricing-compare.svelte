@@ -53,7 +53,9 @@
   ];
 </script>
 
-<section class="hidden flex-col gap-16 px-10 pb-[7rem] pt-14 md:flex">
+<section
+  class="hidden flex-col gap-16 px-10 pb-[7rem] pt-14 md:flex xl:gap-14 xl:px-[22.188rem] xl:pb-40 xl:pt-20"
+>
   <h2
     class="text-center text-[2.5rem] font-bold uppercase leading-[3rem] tracking-[4.17px] text-pure-black"
   >

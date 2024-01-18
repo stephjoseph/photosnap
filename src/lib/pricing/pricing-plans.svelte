@@ -27,7 +27,7 @@
 </script>
 
 <section
-  class="relative flex w-full flex-col items-center gap-10 px-7 pb-8 pt-16 md:px-10 md:pb-14 md:pt-[7rem]"
+  class="relative flex w-full flex-col items-center gap-10 px-7 pb-8 pt-16 md:px-10 md:pb-14 md:pt-[7rem] xl:gap-12 xl:px-[10.313rem] xl:pb-20 xl:pt-[7.5rem]"
 >
   <h2 class="invisible absolute -left-[9999px]">Pricing Plans</h2>
   <div class="pricing__switch">
@@ -46,25 +46,29 @@
       >Yearly</span
     >
   </div>
-  <div class="flex w-full flex-col gap-6">
+  <div
+    class="flex w-full flex-col gap-6 xl:flex-row xl:items-center xl:gap-[1.875rem]"
+  >
     {#each plans as plan, i (plan.title)}
       <div
-        class="relative flex w-full flex-col items-center gap-10 px-5 pb-10 pt-14 md:items-start md:gap-8 md:p-10 {i ===
+        class="relative flex w-full flex-col items-center gap-10 px-5 pb-10 pt-14 md:items-start md:gap-8 md:p-10 xl:px-10 {i ===
         1
-          ? 'bg-pure-black'
-          : 'bg-[#F5F5F5]'}"
+          ? 'bg-pure-black xl:pb-[4.5rem] xl:pt-[5.5rem]'
+          : 'bg-[#F5F5F5] xl:pb-10 xl:pt-14'}"
       >
         {#if i === 1}
           <div
-            class="absolute left-0 top-0 block h-[0.375rem] w-full bg-gradient-to-tr from-[#FFC593] from-0% via-[#BC7198] via-[43.29%] to-[#5A77FF] to-[83.33%] md:h-full md:w-[0.375rem]"
+            class="absolute left-0 top-0 block h-[0.375rem] w-full bg-gradient-to-tr from-[#FFC593] from-0% via-[#BC7198] via-[43.29%] to-[#5A77FF] to-[83.33%] md:h-full md:w-[0.375rem] xl:h-[0.375rem] xl:w-full"
           ></div>
         {/if}
-        <div class="flex w-full flex-col gap-10 md:flex-row md:justify-between">
+        <div
+          class="flex w-full flex-col gap-10 md:flex-row md:justify-between xl:flex-col"
+        >
           <div
-            class="flex flex-col items-center gap-[1.125rem] md:w-[44.41%] md:items-start"
+            class="flex flex-col items-center gap-[1.125rem] md:w-[44.41%] md:items-start xl:w-full xl:items-center"
           >
             <h3
-              class="text-center text-[1.5rem] font-bold leading-[1.563rem] tracking-normal md:text-left {i ===
+              class="text-center text-[1.5rem] font-bold leading-[1.563rem] tracking-normal md:text-left xl:text-center {i ===
               1
                 ? 'text-pure-white'
                 : 'text-pure-black'}"
@@ -72,7 +76,7 @@
               {plan.title}
             </h3>
             <p
-              class="text-center text-[0.938rem] font-normal leading-[1.563rem] tracking-normal md:text-left {i ===
+              class="text-center text-[0.938rem] font-normal leading-[1.563rem] tracking-normal md:text-left xl:text-center {i ===
               1
                 ? 'text-pure-white/60'
                 : 'text-pure-black/60'}"
@@ -99,7 +103,7 @@
           </div>
         </div>
         <a
-          class="w-[87.81%] py-3 text-center text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] hover:bg-light-grey hover:text-pure-black md:max-w-[270px] {i ===
+          class="w-[87.81%] py-3 text-center text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] hover:bg-light-grey hover:text-pure-black md:max-w-[270px] xl:w-full {i ===
           1
             ? 'bg-pure-white text-pure-black'
             : 'bg-pure-black text-pure-white'}"

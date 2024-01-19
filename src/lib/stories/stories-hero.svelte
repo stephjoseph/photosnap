@@ -70,11 +70,17 @@
       </p>
     </div>
     <a
-      class="peer z-10 flex w-fit items-center gap-[1.125rem] text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-white"
+      class="group peer z-10 flex w-fit items-center gap-[1.125rem] text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-white"
       href="/"
     >
-      <span>Read the story</span>
-      <img src={arrow} alt="arrow icon" />
+      <span class="group-hover:underline group-active:underline"
+        >Read the story</span
+      >
+      <img
+        class="transition-transform group-hover:translate-x-1 group-active:translate-x-1"
+        src={arrow}
+        alt="arrow icon"
+      />
     </a>
     <div
       class="invisible left-0 top-0 hidden h-full w-[45rem] bg-[radial-gradient(94.05%_94.05%_at_0%_100%,_#FFC593_0%,_rgba(188,_113,_152,_0.50)_52.36%,_rgba(90,_119,_255,_0.00)_100%)] opacity-0 transition-opacity duration-300 xl:absolute xl:block xl:peer-hover:visible xl:peer-hover:opacity-[0.4899]"

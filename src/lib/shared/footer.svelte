@@ -71,25 +71,25 @@
         <ul class=" flex w-full min-w-[255px] gap-7 xl:flex-col xl:gap-5">
           <li class="w-full">
             <a
-              class="block w-full text-center text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-white xl:text-left"
+              class="block w-full text-center text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-white transition-colors hover:text-pure-white/30 active:text-pure-white/30 xl:text-left"
               href="/">Home</a
             >
           </li>
           <li class="w-full">
             <a
-              class="block w-full text-center text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-white xl:text-left"
+              class="block w-full text-center text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-white transition-colors hover:text-pure-white/30 active:text-pure-white/30 xl:text-left"
               href="/stories">Stories</a
             >
           </li>
           <li class="w-full">
             <a
-              class="block w-full text-center text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-white xl:text-left"
+              class="block w-full text-center text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-white transition-colors hover:text-pure-white/30 active:text-pure-white/30 xl:text-left"
               href="/features">Features</a
             >
           </li>
           <li class="w-full">
             <a
-              class="block w-full text-center text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-white xl:text-left"
+              class="block w-full text-center text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-white transition-colors hover:text-pure-white/30 active:text-pure-white/30 xl:text-left"
               href="/pricing">Pricing</a
             >
           </li>
@@ -97,11 +97,17 @@
       </nav>
     </div>
     <a
-      class="flex items-center justify-center gap-6 text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-white"
+      class="group flex items-center justify-center gap-6 text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-white"
       href="/"
     >
-      <span>Get an invite</span>
-      <img src={arrow} alt="arrow icon" />
+      <span class="group-hover:underline group-active:underline"
+        >Get an invite</span
+      >
+      <img
+        class="transition-transform group-hover:translate-x-1 group-active:translate-x-1"
+        src={arrow}
+        alt="arrow icon"
+      />
     </a>
   </div>
   <div

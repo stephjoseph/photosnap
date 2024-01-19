@@ -49,28 +49,28 @@
       >
         <li>
           <a
-            class="block w-full text-center text-[0.938rem] font-bold uppercase leading-5 tracking-[2.5px] text-pure-black"
+            class="block w-full text-center text-[0.938rem] font-bold uppercase leading-5 tracking-[2.5px] text-pure-black transition-colors hover:text-pure-black/30 active:text-pure-black/30"
             on:click={toggleMenu}
             href="/stories">Stories</a
           >
         </li>
         <li>
           <a
-            class="block w-full text-center text-[0.938rem] font-bold uppercase leading-5 tracking-[2.5px] text-pure-black"
+            class="block w-full text-center text-[0.938rem] font-bold uppercase leading-5 tracking-[2.5px] text-pure-black transition-colors hover:text-pure-black/30 active:text-pure-black/30"
             on:click={toggleMenu}
             href="/features">Features</a
           >
         </li>
         <li>
           <a
-            class="block w-full text-center text-[0.938rem] font-bold uppercase leading-5 tracking-[2.5px] text-pure-black"
+            class="block w-full text-center text-[0.938rem] font-bold uppercase leading-5 tracking-[2.5px] text-pure-black transition-colors hover:text-pure-black/30 active:text-pure-black/30"
             on:click={toggleMenu}
             href="/pricing">Pricing</a
           >
         </li>
       </ul>
       <button
-        class="w-full bg-pure-black py-[0.875rem] text-center text-[0.938rem] font-bold uppercase leading-5 tracking-[2.5px] text-pure-white"
+        class="w-full bg-pure-black py-[0.875rem] text-center text-[0.938rem] font-bold uppercase leading-5 tracking-[2.5px] text-pure-white hover:bg-light-grey hover:text-pure-black active:bg-light-grey active:text-pure-black"
         on:click={toggleMenu}>Get an invite</button
       >
     </nav>

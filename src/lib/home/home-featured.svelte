@@ -66,7 +66,7 @@
   <div class="grid w-full grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
     {#each featured as item}
       <div
-        class="relative h-[100vw] w-full bg-cover bg-center bg-no-repeat md:h-[65.10vw] xl:h-[34.72vw]"
+        class="group relative h-[100vw] w-full bg-cover bg-center bg-no-repeat transition-transform hover:-translate-y-6 active:-translate-y-6 md:h-[65.10vw] xl:h-[34.72vw]"
         style="background-image: url({windowWidth < 768
           ? item.image.mobile
           : item.image.desktop})"
@@ -94,6 +94,9 @@
             <a href="/"> <img src={arrow} alt="arrow icon" /></a>
           </div>
         </div>
+        <div
+          class="absolute bottom-0 left-0 block h-[0.375rem] w-full bg-gradient-to-tr from-[#FFC593] from-0% via-[#BC7198] via-[43.29%] to-[#5A77FF] to-[83.33%] opacity-0 transition-opacity group-hover:opacity-100 group-active:opacity-100"
+        ></div>
       </div>
     {/each}
   </div>

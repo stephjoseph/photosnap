@@ -56,11 +56,17 @@
       </p>
     </div>
     <a
-      class="flex w-fit items-center gap-[1.125rem] text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-black"
+      class="group flex w-fit items-center gap-[1.125rem] text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-black"
       href="/"
     >
-      <span>{showcase.cta}</span>
-      <img src={arrow} alt="arrow icon" />
+      <span class="group-hover:underline group-active:underline"
+        >{showcase.cta}</span
+      >
+      <img
+        class="transition-transform group-hover:translate-x-1 group-active:translate-x-1"
+        src={arrow}
+        alt="arrow icon"
+      />
     </a>
   </div>
 </section>

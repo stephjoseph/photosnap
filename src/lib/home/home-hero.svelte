@@ -51,11 +51,17 @@
       </p>
     </div>
     <a
-      class="flex w-fit items-center gap-[1.125rem] text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-white"
+      class="group flex w-fit items-center gap-[1.125rem] text-[0.75rem] font-bold uppercase leading-4 tracking-[2px] text-pure-white"
       href="/"
     >
-      <span>Get an invite</span>
-      <img src={arrow} alt="arrow icon" />
+      <span class="group-hover:underline group-active:underline"
+        >Get an invite</span
+      >
+      <img
+        class="transition-transform group-hover:translate-x-1 group-active:translate-x-1"
+        src={arrow}
+        alt="arrow icon"
+      />
     </a>
   </div>
 </section>
